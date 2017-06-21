@@ -18,7 +18,7 @@ h3 {font-size:18px; line-height:24px; color:#fff; font-weight:bold; font-family:
 menu {margin:0px; padding:0px; list-style-type:none;}
 ul {margin:0; padding:0px; list-style-type:disc;}
 ol {margin:25px 0px 25px 30px; padding:0px; list-style-type:decimal;}
-ol li, ul li {margin:0px; padding:0px; list-style-type: none;}
+ol li, ul li {margin:0px; padding:0px; }
 ol ol, ul ul {margin:6px 0px 6px 30px;}
 form {margin:0px; padding:0px;}
 button, input, select, textarea {outline:none; font-family:'arial';}
@@ -122,7 +122,6 @@ header {width:100%;}
 	top: 6px;
 	right: 15px;
 	background:	url("../images/Logo-hainan.png") 0 0 no-repeat;
-
 }
 
 .block-header .support-btn-wrapper {
@@ -131,6 +130,7 @@ header {width:100%;}
 	margin-top: 12px;
 	padding: 7px 6px;
 	background-color: #204480;
+	transition: all .2s ease-in;
 }
 
 .block-header .support-btn {
@@ -144,6 +144,17 @@ header {width:100%;}
 	text-transform: uppercase;
 	border: 1px solid #fff;
 	background-color: #204480;
+	transition: all .2s ease-in;
+}
+
+.block-header .support-btn-wrapper:hover {
+	background-color: transparent;
+}
+
+.block-header .support-btn-wrapper:hover .support-btn {
+	background-color: #fff;
+	color: #ff9f00;
+	border: 1px solid #204480;
 }
 
 
@@ -198,6 +209,13 @@ padding-left: 44px;
 	text-transform: uppercase;
 	color: #fff;
 	border: 3px solid #fff;
+	transition: all .2s ease-in;
+}
+
+.block-promo .reserve-btn:hover {
+	background-color: #fff;
+	color: #ff9f00;
+	border: 3px solid transparent;
 }
 
 /* ==========================================================================
@@ -206,7 +224,7 @@ padding-left: 44px;
 .block-offers {
 	position: relative;
 	margin-top: -322px;
-	background: url("../images/bg-offers.png") center 1367px no-repeat;
+	background: url("../images/bg-offers.png") center 1302px no-repeat;
 }
 
 .block-offers .offers-title {
@@ -247,10 +265,11 @@ padding-left: 44px;
 }
 
 .block-offers .info .info-list {
-	margin-left: 42px;
+	margin-left: 60px;
 	margin-bottom: 26px;
 }
 
+/*ITEM1*/
 .block-offers .item1 {
 	min-height: 427px;
 	padding-top: 33px;
@@ -259,33 +278,8 @@ padding-left: 44px;
 	background: url("../images/img1.png") -17px 3px no-repeat;
 }
 
-.block-offers .item2 {
-	min-height: 401px;
-	margin-bottom: 123px;
-	background: url("../images/img2.png") 21px 43px no-repeat;
-}
-
-.block-offers .item3 {
-	min-height: 423px;
-	margin-bottom: 122px;
-	background: url("../images/img3.png") -4px 33px no-repeat;
-}
-
-.block-offers .item4 {
-	min-height: 500px;
-	margin-bottom: 125px;
-	background: url("../images/img4.png") 58px 24px no-repeat;
-}
-
-.block-offers .item5 {
-	min-height: 579px;
-	margin-bottom: 133px;
-	background: url("../images/img5.png") 55px -9px	no-repeat;
-}
-
-.block-offers .item6 {
-	min-height: 430px;
-	background: url("../images/img6.png") -6px 52px no-repeat;
+.block-offers .item1 .info-list {
+	margin-bottom: 24px;
 }
 
 .block-offers .item1 .title{
@@ -296,6 +290,17 @@ padding-left: 44px;
 
 .block-offers .item1 .price{
 	margin-bottom: 19px;
+}
+
+/*ITEM2*/
+.block-offers .item2 {
+	min-height: 401px;
+	margin-bottom: 123px;
+	background: url("../images/img2.png") 21px 43px no-repeat;
+}
+
+.block-offers .item2 .info-list {
+	margin-bottom: 28px;
 }
 
 .block-offers .item2 .title{
@@ -313,6 +318,18 @@ padding-left: 44px;
 	margin-bottom: 24px;
 }
 
+
+/*ITEM3*/
+.block-offers .item3 {
+	min-height: 423px;
+	margin-bottom: 122px;
+	background: url("../images/img3.png") -4px 33px no-repeat;
+}
+
+.block-offers .item3 .info-list {
+	margin-bottom: 29px;
+}
+
 .block-offers .item3 .title{
 	width: 261px;
 	height: 49px;
@@ -327,6 +344,13 @@ padding-left: 44px;
 	margin-bottom: 20px;
 }
 
+/*ITEM4*/
+.block-offers .item4 {
+	min-height: 500px;
+	margin-bottom: 122px;
+	background: url("../images/img4.png") 58px 24px no-repeat;
+}
+
 .block-offers .item4 .title{
 	width: 225px;
 	height: 53px;
@@ -337,8 +361,19 @@ padding-left: 44px;
 	padding-bottom: 31px;
 }
 
+.block-offers .item4 .info-list {
+	margin-bottom: 29px;
+}
+
 .block-offers .item4 .price{
 	margin-bottom: 18px;
+}
+
+/*ITEM5*/
+.block-offers .item5 {
+	min-height: 579px;
+	margin-bottom: 103px;
+	background: url("../images/img5.png") 55px -9px	no-repeat;
 }
 
 .block-offers .item5 .title{
@@ -349,11 +384,17 @@ padding-left: 44px;
 }
 
 .block-offers .item5 .info{
-	padding-bottom: 32px;
+	padding-bottom: 26px;
 }
 
 .block-offers .item5 .price{
 	margin-bottom: 20px;
+}
+
+/*ITEM6*/
+.block-offers .item6 {
+	min-height: 430px;
+	background: url("../images/img6.png") -6px 52px no-repeat;
 }
 
 .block-offers .item6 .title{
@@ -363,12 +404,22 @@ padding-left: 44px;
 	background: url("../images/sub-title5.png") 0 0 no-repeat;
 }
 
+.block-offers .item6 .info-list {
+	margin-bottom: 29px;
+}
+
+.block-offers .item6 .info{
+	padding-bottom: 36px;
+}
+
 .block-offers .item6 .price{
 	margin-bottom: 24px;
 }
 
+
 .block-offers .info-list ol {
 	margin: 0;
+	list-style-type: decimal;
 }
 
 .block-offers .info-list li {
@@ -383,7 +434,7 @@ padding-left: 44px;
 .block-offers .reserve-btn {
 	display: inline-block;
 	margin-left: 40px;
-	padding: 15px 33px;
+	padding: 13px 33px;
 	vertical-align: top;
 	background-color: #204480;
 	font-family: "BloggerSans-Medium", sans-serif;
@@ -391,6 +442,14 @@ padding-left: 44px;
 	line-height: 14px;
 	color: #fff;
 	text-transform: uppercase;
+	border: 1px solid transparent;
+	transition: all .2s ease-in;
+}
+
+.block-offers .reserve-btn:hover {
+	border: 1px solid #ff9f00;
+	background-color: #fff;
+	color: #ff9f00;
 }
 /* ==========================================================================
 	 block-bonus >>>
@@ -433,24 +492,38 @@ padding-left: 44px;
 	width: 250px;
 	margin-right: 144px;
 }
+
 .block-footer .tel-wrp	{
 	margin-bottom: 31px;
 }
+
 .block-footer .tel-wrp a {
 	display: block;
 	font-family: "BloggerSans-Medium", sans-serif;
 	font-size: 30px;
 	line-height: 45px;
 	color: #ff9f00;
+	transition: color .2s ease-in;
 }
+
+.block-footer .tel-wrp a:hover {
+	color: #fff;
+}
+
 .block-footer .email-wrp {
 	margin-bottom: 20px;
 }
+
 .block-footer .email-wrp a {
 	font-family: "BloggerSans-Medium", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
+	transition: color .2s ease-in;
+}
+
+.block-footer .email-wrp a:hover {
+	color: #ff9f00;
 }
 
 .block-footer .address-wrp span {
@@ -498,6 +571,13 @@ padding-left: 44px;
 	text-transform: uppercase;
 	background-color: #204480;
 	border: 1px solid #fff;
+	transition: all .2s ease-in;
+}
+
+.block-footer input[type="submit"]:hover {
+	border: 1px solid transparent;
+	background-color: #fff;
+	color: #ff9f00;
 }
 
 input::-webkit-input-placeholder {color: #fff;}
