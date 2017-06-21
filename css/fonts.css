@@ -1,0 +1,34 @@
+/* ==========================================================================
+	 Файл для подключения шрифтов
+	 Генератор шрифтов - https://www.web-font-generator.com
+	 Генератор шрифтов - http://www.fontsquirrel.com/tools/webfont-generator
+	 ========================================================================== */
+
+
+@font-face {
+	font-family: "Bello-Pro";
+	src: url("../fonts/Bello-Pro.woff") format("woff");
+}
+
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "BloggerSans-Regular";
+	src: url("../fonts/BloggerSans.woff") format("woff");
+}
+@font-face {
+	font-family: "BloggerSans-Medium";
+	src: url("../fonts/BloggerSans-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: "BloggerSans-Bold";
+	src: url("../fonts/BloggerSans-Bold.woff") format("woff");
+}

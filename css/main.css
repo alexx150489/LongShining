@@ -1,0 +1,505 @@
+/* ==========================================================================
+	 Основные стили сайта
+	 ========================================================================== */
+
+/* Typography */
+html, body {margin:0px; padding:0px; font-family:'Arial'; font-size:14px; line-height:18px; color:#000; background:#fff;}
+html.fancybox-lock {overflow:visible !important;}
+html.fancybox-lock body {position:relative;}
+a {color:#000000; outline:none; text-decoration:none;}
+a:hover {text-decoration:none;}
+a img {border:none;}
+img {vertical-align:middle;}
+hr {display:block; height:1px; border:0 none; border-top:1px solid #ccc; margin:0px; padding:0px;}
+p {margin:0px 0px; padding:0px;}
+h1 {font-size:36px; line-height:42px; color:#fff; font-weight:bold; font-family:'Arial'; margin:0px; padding:0px;}
+h2 {font-size:24px; line-height:30px; color:#fff; font-weight:bold; font-family:'Arial'; margin:0px; padding:0px;}
+h3 {font-size:18px; line-height:24px; color:#fff; font-weight:bold; font-family:'Arial'; margin:0px; padding:0px;}
+menu {margin:0px; padding:0px; list-style-type:none;}
+ul {margin:0; padding:0px; list-style-type:disc;}
+ol {margin:25px 0px 25px 30px; padding:0px; list-style-type:decimal;}
+ol li, ul li {margin:0px; padding:0px; list-style-type: none;}
+ol ol, ul ul {margin:6px 0px 6px 30px;}
+form {margin:0px; padding:0px;}
+button, input, select, textarea {outline:none; font-family:'arial';}
+textarea {overflow:auto; resize: vertical;}
+table {margin:0px; padding:0px; border:none; border-collapse:collapse;}
+table td, table th {margin:0px; padding:0px; border:none; border-collapse:collapse; text-align:left; vertical-align:top; font-weight:normal;}
+input {outline:none;}
+
+/* General */
+
+main {min-height:100%;}
+.clear.clear-footer {height:100px;}
+.site-wrap { width: 970px; margin: 0 auto; padding: 0 15px; }
+.container {max-width: 1920px; min-width: 970px; position: relative; min-height: 100%; }
+
+
+/* Header */
+header {width:100%;}
+
+
+/* Footer */
+/*footer {position:absolute;left: 0;bottom: 0;width: 100%;height: 761px;}*/
+
+
+
+/* ==========================================================================
+	 Вспомогательные стили
+	 ========================================================================== */
+.show {display:block;}
+.hide {display:none;}
+.invisible {visibility:hidden;}
+.clear {margin:0px; padding:0px; font-size:0px; line-height:0px; height:1px; clear:both; float:none;}
+.clear-m {margin: 0;}
+.clear-p {padding: 0;}
+.unstyle-list {margin: 0;list-style-type: none;}
+.clearfix:after {content: "";	display: table;	clear: both;}
+::-ms-reveal {display:none;}
+
+
+/* ==========================================================================
+	 Стили для печати
+	 ========================================================================== */
+
+@media print {
+		*, *:before, *:after, *:first-letter, *:first-line {background: transparent !important; color: #000 !important; box-shadow: none !important; text-shadow: none !important;}
+		a, a:visited {text-decoration: underline;}
+		a[href]:after {content: " (" attr(href) ")";}
+		abbr[title]:after {content: " (" attr(title) ")";}
+		a[href^="#"]:after, a[href^="javascript:"]:after {content: "";}
+		pre, blockquote {border: 1px solid #999; page-break-inside: avoid;}
+		thead {display: table-header-group;}
+		tr, img {page-break-inside: avoid;}
+		img {max-width: 100% !important;}
+		p, h2, h3 {orphans: 3; widows: 3;}
+		h2, h3 {page-break-after: avoid;}
+}
+
+
+/* ==========================================================================
+	 Начало CSS >>>
+	 ========================================================================== */
+/* ==========================================================================
+	 block-header >>>
+	 ========================================================================== */
+
+.block-header {
+	background-color: #006873;
+	border: 1px solid #dad5d5;
+}
+
+.block-header .header-left {
+	float: left;
+}
+
+.block-header .header-logo {
+	padding: 11px 0px;
+}
+
+.block-header .header-right {
+	float: right;
+	font-size: 0;
+}
+
+.block-header .support {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 0;
+	padding-right: 86px;
+	font-family: "OpenSans-Regular", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.block-header .support::after {
+	position: absolute;
+	content: '';
+	width: 60px;
+	height: 49px;
+	top: 6px;
+	right: 15px;
+	background:	url("../images/Logo-hainan.png") 0 0 no-repeat;
+
+}
+
+.block-header .support-btn-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 12px;
+	padding: 7px 6px;
+	background-color: #204480;
+}
+
+.block-header .support-btn {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "OpenSans-Bold", sans-serif;
+	font-size: 13px;
+	padding: 0 19px;
+	line-height: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	background-color: #204480;
+}
+
+
+/* ==========================================================================
+	 block-promo >>>
+	 ========================================================================== */
+.block-promo {
+	position: relative;
+	min-height:1363px;
+	padding-top: 211px;
+	background: #fff url("../images/promo-bg1.png") center -34px no-repeat;
+	text-align: center;
+}
+
+
+
+.block-promo h1 {	 
+	margin-bottom: 58px;
+	font-family: "Bello-Pro", sans-serif;
+	font-size: 189px;
+	line-height: 189px;
+	color: #fff;
+}
+
+.block-promo .promo-descr {
+	margin-bottom: 59px;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 58px;
+	line-height: 58px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.block-promo .promo-descr span {
+padding-left: 44px;
+}
+
+.block-promo .promo-reserve {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.block-promo .reserve-btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 24px 57px;
+	margin-left: 36px;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 3px solid #fff;
+}
+
+/* ==========================================================================
+	 block-offers >>>
+	 ========================================================================== */
+.block-offers {
+	position: relative;
+	margin-top: -322px;
+	background: url("../images/bg-offers.png") center 1367px no-repeat;
+}
+
+.block-offers .offers-title {
+	width: 723px;
+	height: 79px;
+	margin: 0 auto;
+	margin-bottom: 59px;
+	background: url("../images/offers-title.png") 0 0 no-repeat;
+}
+
+.block-offers .info {
+	float: right;
+	width: 460px;
+	padding-top: 19px;
+	padding-bottom: 22px;
+	padding-right: 30px;
+	background-color: #fff;
+	-webkit-box-shadow: -2px 1px 50px -14px rgba(0,0,0,0.50);
+	-moz-box-shadow: -2px 1px 50px -14px rgba(0,0,0,0.50);
+	box-shadow: -2px 1px 50px -14px rgba(0,0,0,0.50);
+}
+
+.block-offers .info .title {
+	margin-left: 38px;
+}
+
+.block-offers .price {
+	width: 233px;
+	height: 41px;
+	margin-left: 12px;
+	margin-bottom: 14px;
+	padding: 10px 30px;
+	background: url("../images/price-bg.png") 0 0 no-repeat;
+	font-family: "BloggerSans-Bold", sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.block-offers .info .info-list {
+	margin-left: 42px;
+	margin-bottom: 26px;
+}
+
+.block-offers .item1 {
+	min-height: 427px;
+	padding-top: 33px;
+	padding-bottom: 47px;
+	margin-bottom: 49px;
+	background: url("../images/img1.png") -17px 3px no-repeat;
+}
+
+.block-offers .item2 {
+	min-height: 401px;
+	margin-bottom: 123px;
+	background: url("../images/img2.png") 21px 43px no-repeat;
+}
+
+.block-offers .item3 {
+	min-height: 423px;
+	margin-bottom: 122px;
+	background: url("../images/img3.png") -4px 33px no-repeat;
+}
+
+.block-offers .item4 {
+	min-height: 500px;
+	margin-bottom: 125px;
+	background: url("../images/img4.png") 58px 24px no-repeat;
+}
+
+.block-offers .item5 {
+	min-height: 579px;
+	margin-bottom: 133px;
+	background: url("../images/img5.png") 55px -9px	no-repeat;
+}
+
+.block-offers .item6 {
+	min-height: 430px;
+	background: url("../images/img6.png") -6px 52px no-repeat;
+}
+
+.block-offers .item1 .title{
+	width: 143px;
+	height: 53px;
+	background: url("../images/sub-title1.png") 0 0 no-repeat;
+}
+
+.block-offers .item1 .price{
+	margin-bottom: 19px;
+}
+
+.block-offers .item2 .title{
+	width: 178px;
+	height: 32px;
+	margin-bottom: 13px;
+	background: url("../images/sub-title2.png") 0 0 no-repeat;
+}
+
+.block-offers .item2 .info{
+	padding-bottom: 27px;
+}
+
+.block-offers .item2 .price{
+	margin-bottom: 24px;
+}
+
+.block-offers .item3 .title{
+	width: 261px;
+	height: 49px;
+	background: url("../images/sub-title4.png") 0 0 no-repeat;
+}
+
+.block-offers .item3 .info{
+	padding-bottom: 31px;
+}
+
+.block-offers .item3 .price{
+	margin-bottom: 20px;
+}
+
+.block-offers .item4 .title{
+	width: 225px;
+	height: 53px;
+	background: url("../images/sub-title3.png") 0 0 no-repeat;
+}
+
+.block-offers .item4 .info{
+	padding-bottom: 31px;
+}
+
+.block-offers .item4 .price{
+	margin-bottom: 18px;
+}
+
+.block-offers .item5 .title{
+	width: 241px;
+	height: 57px;
+	margin-top: -7px;
+	background: url("../images/sub-title6.png") 0 0 no-repeat;
+}
+
+.block-offers .item5 .info{
+	padding-bottom: 32px;
+}
+
+.block-offers .item5 .price{
+	margin-bottom: 20px;
+}
+
+.block-offers .item6 .title{
+	width: 66px;
+	height: 36px;
+	margin-bottom: 10px;
+	background: url("../images/sub-title5.png") 0 0 no-repeat;
+}
+
+.block-offers .item6 .price{
+	margin-bottom: 24px;
+}
+
+.block-offers .info-list ol {
+	margin: 0;
+}
+
+.block-offers .info-list li {
+	margin-bottom: 10px;
+	font-family: "BloggerSans-Regular", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #204480;
+}
+
+
+.block-offers .reserve-btn {
+	display: inline-block;
+	margin-left: 40px;
+	padding: 15px 33px;
+	vertical-align: top;
+	background-color: #204480;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	text-transform: uppercase;
+}
+/* ==========================================================================
+	 block-bonus >>>
+	 ========================================================================== */
+.block-bonus {
+	min-height: 933px;
+	padding-top: 227px;
+	background: #fff url("../images/bonus-bg.png") center center no-repeat;
+}
+
+.block-bonus .text {
+	width: 878px;
+	height: 360px;
+	background: url("../images/bonus-text.png") 0 0 no-repeat;
+}
+/* ==========================================================================
+	 block-footer >>>
+	 ========================================================================== */
+
+.block-footer {
+	background-color: #204480;
+	padding-top: 22px;
+	padding-bottom: 101px;
+}
+
+.block-footer .site-wrap {
+	font-size: 0;
+}
+
+.block-footer .logotype {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 11px;
+	margin-right: 151px;
+}
+
+.block-footer .contacts {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	margin-right: 144px;
+}
+.block-footer .tel-wrp	{
+	margin-bottom: 31px;
+}
+.block-footer .tel-wrp a {
+	display: block;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 30px;
+	line-height: 45px;
+	color: #ff9f00;
+}
+.block-footer .email-wrp {
+	margin-bottom: 20px;
+}
+.block-footer .email-wrp a {
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.block-footer .address-wrp span {
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.block-footer .request {
+	display: inline-block;
+	vertical-align: top;
+	width: 235px;
+	padding-top: 7px;
+}
+
+.block-footer .request-title {
+	margin-bottom: 13px;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.block-footer .form-el-wrp {
+	margin-bottom: 5px;
+}
+.block-footer .form-el-wrp input {
+	width: 100%;
+	margin-bottom: 21px;
+	font-family: "BloggerSans-Regular", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	background-color: #204480;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.block-footer input[type="submit"] {
+	padding: 13px 27px;
+	font-family: "BloggerSans-Medium", sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #204480;
+	border: 1px solid #fff;
+}
+
+input::-webkit-input-placeholder {color: #fff;}
+input::-moz-placeholder {color: #fff;}
+input:-ms-input-placeholder {color: #fff;}
