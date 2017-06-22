@@ -86,7 +86,6 @@ header {width:100%;}
 
 .block-header {
 	background-color: #006873;
-	border: 1px solid #dad5d5;
 }
 
 .block-header .header-left {
@@ -131,6 +130,7 @@ header {width:100%;}
 	padding: 7px 6px;
 	background-color: #204480;
 	transition: all .2s ease-in;
+	cursor: pointer;
 }
 
 .block-header .support-btn {
@@ -148,12 +148,12 @@ header {width:100%;}
 }
 
 .block-header .support-btn-wrapper:hover {
-	background-color: transparent;
+	background-color: #fff;
 }
 
 .block-header .support-btn-wrapper:hover .support-btn {
 	background-color: #fff;
-	color: #ff9f00;
+	color: #204480;
 	border: 1px solid #204480;
 }
 
